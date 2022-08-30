@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: shark-app
 spec:
-  replicas: 0
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
