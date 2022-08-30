@@ -17,4 +17,4 @@ spec:
       - image: imejri/nodejs-image-demo
         name: shark-app
         ports:
-        - containerPort: 80
+        - containerPort: 8080
