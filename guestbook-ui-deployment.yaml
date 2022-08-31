@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: shark-app
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -14,5 +14,5 @@ spec:
         app: shark-app
     spec:
       containers:
-      - image: imejri/nodejs-image-demo
+      - image: nginx
         name: shark-app
