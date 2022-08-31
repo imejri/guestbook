@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shark-app
+  name: guestbook
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: shark-app
+      app: guestbook
   template:
     metadata:
       labels:
-        app: shark-app
+        app: guestbook
     spec:
       containers:
-      - image: imejri/nodejs-image-demo:latest
+      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
         name: shark-app
