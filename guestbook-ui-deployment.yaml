@@ -14,5 +14,5 @@ spec:
         app: shark-app
     spec:
       containers:
-      - image: nginx
+      - image: imejri/nodejs-image-demo
         name: shark-app
